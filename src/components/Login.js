@@ -13,16 +13,15 @@ const Login = () => {
         setCredentials({...credentials , [e.target.name] : e.target.value})
     }
 
-    const handleClick = (e) =>{
+    const handleClick = async (e) =>{
+      // console.log("pushed")
          e.preventDefault();
-        elogin(credentials.email , credentials.password);
+         await elogin(credentials.email , credentials.password);
          if(localStorage.getItem('token'))
          {
          history.push('/');
          }
         
-
-
     }
   return (
      <>
