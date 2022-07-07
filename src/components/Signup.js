@@ -23,7 +23,7 @@ const Signup = () => {
      <form onSubmit={handleClick} >
      <div class="form-group" >
      <label for="name">Name</label>
-     <input type="text" name="name" value={credentials.name} onChange={handleChange} class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email"/>
+     <input type="text" name="name" value={credentials.name} onChange={handleChange} class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter name"/>
     
    </div>
   <div class="form-group" >
